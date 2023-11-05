@@ -1,0 +1,292 @@
+body {
+    background-color: #000000cb;
+    font-family: "Times New Roman", serif;
+    line-height: 2rem;
+    font-size: 1.5rem;
+    color: #fff;
+}
+
+.container {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 2rem;
+}
+
+section {
+    display: none;
+    margin: 2rem;
+    height: 100vh;
+
+}
+
+nav {
+    background-color: #5e5a5a;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    padding: 0;
+}
+
+nav li {
+    display: inline;
+}
+
+nav a {
+    text-decoration: none;
+    color: #fff;
+    margin: 1rem;
+    font-weight: bold;
+    font-size: 1.3rem;
+}
+
+nav a:hover {
+    color: #930C10;
+    text-shadow: 0 0 1px #930C10;
+}
+
+#landingSection {
+    display: block;
+    text-align: center;
+    padding: 3rem;
+}
+
+#landingSection a{
+    cursor: pointer;
+    color: #fff;
+}
+
+#landingSection a:hover{
+    color: #930C10;
+}
+
+button {
+    padding: 1rem 2rem;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.title {
+    font-size: 2.4rem;
+    font-weight: bold;
+    margin-bottom: 2rem;
+}
+
+.secondaryTitle {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+h2 {
+    color: #930C10;
+    font-size: 2.4rem;
+    
+}
+
+p {
+    color: #fff;
+    font-size: 1.6rem; 
+}
+
+label {
+    font-weight: bold;
+    color: #fff;
+    border-radius: 5rem;
+}
+
+input[type="text"],
+button {
+    padding: 1rem;
+    margin: 0.5rem 0;
+}
+
+#generateButton {
+    border: none;
+    background-color: #007bff;
+    color: #fff;
+    transition: transform 0.2s ease;
+    border-radius: 80%;
+    vertical-align: middle;
+}
+
+#characterName {
+    width: 50%;
+    padding: 1rem;
+    font-size: 1.6rem;
+    vertical-align: middle;
+}
+
+#generatedCharacter {
+    padding: 1rem;
+    background-color: #2d2d2d;
+    margin-top: 1rem;
+}
+
+.characterAttribute {
+    margin-bottom: 1rem;
+    color: #fff;
+    font-size: 1.2rem;
+
+    justify-content: space-between;
+}
+
+.randomiseButton {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+    border-radius: 0.5rem;
+    font-size: 0.8rem;
+    justify-content: space-between;
+}
+
+.randomiseButton:hover {
+    background-color: #0056b3;
+}
+
+#saveCharacterButton {
+    background-color: #fff;
+}
+
+#saveCharacterButton:hover {
+    background-color: #930C10;
+}
+
+#searchButton {
+    background-color: #fff;
+}
+
+#searchButton:hover {
+    background-color: #930C10;
+}
+
+#saveCharacterButton.ticked {
+    background-color: #4CAF50;
+    color: white;
+    cursor: not-allowed;
+    transition: none;
+}
+
+#categorySelect {
+    font-size: 1.2rem;
+}
+
+#searchInput {
+    width: 60%;
+}
+
+#searchResults {
+    max-height: 200px;
+    overflow-y: auto;
+    border: 0.1rem solid #ccc;
+    padding: 1rem;
+    border-radius: 0.5rem;
+}
+
+#selectedInfo {
+    margin-top: 2rem;
+    padding: 1rem;
+    border-radius: 0.5rem;
+}
+
+.dt {
+    margin: 0.5rem;
+}
+
+#searchResults {
+    max-height: 200px;
+    overflow-y: auto;
+    color: #fff;
+}
+
+#searchResults div {
+    padding: 0.5rem;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+#searchResults div:hover {
+    background-color: #930C10;
+}
+
+.bottom .name {
+    color: #F7CE65;
+}
+
+@media screen and (max-width: 768px) {
+    #landingSection {
+        max-width: 100%;
+        padding: 0rem
+    }
+
+    .container {
+        max-width: 90%;
+        padding: 1rem;
+    }
+
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav a {
+        margin: 0.5rem;
+    }
+
+    .title {
+        font-size: 2rem;
+    }
+
+    .secondaryTitle {
+        font-size: 1.6rem;
+    }
+
+    h2 {
+        font-size: 2rem;
+    }
+
+    p {
+        font-size: 1.4rem;
+    }
+
+    label {
+        font-size: 1.4rem;
+    }
+
+    input[type="text"],
+    button {
+        padding: 0.8rem;
+        margin: 0.3rem 0;
+        font-size: 1.4rem;
+    }
+
+    #generateButton {
+        padding: 0.8rem 1.6rem;
+    }
+
+    .randomiseButton {
+        padding: 0.4rem 0.8rem;
+        margin-left: 0.5rem;
+        font-size: 1rem;
+    }
+
+    #searchResults {
+        max-height: 12rem;
+        padding: 0.8rem;
+    }
+
+    #selectedInfo {
+        padding: 0.8rem;
+    }
+
+    #searchResults div {
+        padding: 0.4rem;
+    }
+}
